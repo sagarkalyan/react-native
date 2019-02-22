@@ -90,7 +90,7 @@ react-native run-android
 
 If everything is set up and working correctly, you should see your new app running in your Android device.
 
-![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/pic3-1.png)
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/pic3-1.jpg)
 
 To be continued...
 
