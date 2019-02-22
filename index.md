@@ -40,7 +40,7 @@ npm install -g react-native-cli
 ```
 
 6. 
-a. **Android Studio:** [Download Link](https://developer.android.com/studio/)
+6.1. **Android Studio:** [Download Link](https://developer.android.com/studio/)
 Latest Version available: 3.3.1 for Windows 64-bit (947 MB).
 
 Make sure the boxes next to all of the following are checked:
@@ -50,9 +50,9 @@ Make sure the boxes next to all of the following are checked:
 - Android Virtual Device
 - Then, click "Next" to install all of these components.
 
-b. **Install the Android SDK:** Requires the **Android 9 (Pie) SDK** to install.
+6.2. **Install the Android SDK:** Requires the **Android 9 (Pie) SDK** to install.
 > The Android Studio has **"Preferences"** option where Android SDK is found, under **Appearance & Behavior → System Settings → Android SDK**.
-c. **Configuration (ANDROID_HOME environment variable):**
+6.3. **Configuration (ANDROID_HOME environment variable):**
 ```
 C:\Users\YOUR_USERNAME\AppData\Local\Android\Sdk
 ```
