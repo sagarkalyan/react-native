@@ -2,16 +2,16 @@
 
 Lets get started with the tutorial on React Native.
 
-First Step: Installation and Building a new react native application.
+### First Step: Installation and Building a new react native application.
 
-Reference:
+**Reference:**
 [Installation process](https://facebook.github.io/react-native/docs/getting-started)
 
-Choose the (Building Projects with Native Code) Option. (I have chosen Windows Installation.)
+Choose the **(Building Projects with Native Code)** Option. (I have chosen Windows Installation.)
 As we are going to use Android Studio instead of Expo. Expo is the easiest way to start building a new React Native application.
 But it has some restrictions which is overcomed by Android Studio. Expo works best for beginners.
 
-Installation Process:
+**Installation Process:**
 You will need Node, the React Native command line interface, Python2, a JDK, and Android Studio.
 For Windows:
 1. [Download and Install Nodejs](https://nodejs.org/en/download/)
@@ -32,7 +32,7 @@ then check version on command prompt:
 ```
 python --version
 ```
-5. Android Studio: [Download Link](https://developer.android.com/studio/)
+5. **Android Studio:** [Download Link](https://developer.android.com/studio/)
 Latest Version available: 3.3.1 for Windows 64-bit (947 MB)
 
 
