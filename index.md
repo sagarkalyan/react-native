@@ -80,6 +80,8 @@ There are two methods to run an application on device.
 I am using Android device (physical) connected through USB debugging. Make sure Developer Option in settings is visible.
 To follow instructions on how to connect: Here is the link -> [Running your app on Android devices](https://facebook.github.io/react-native/docs/running-on-device)
 
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/pic1.png)
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/pic2.png)
 **Running your React Native application**
 **Note:** Run (react-native run-android) inside your project folder:
 ```
