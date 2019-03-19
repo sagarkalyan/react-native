@@ -290,9 +290,9 @@ Modify the given above code, and then run your application again to check if its
 
 ```
 class HomeScreen extends React.Component {
-**static navigationOptions = {
+static navigationOptions = {
         title: 'Sagar Kalyan',
-      };**
+      };
   render() {
     return (
      <ImageBackground source={require('./app/img/bg_travel.jpeg')} style={{width: '100%', height: '100%'}}>
@@ -309,9 +309,9 @@ class HomeScreen extends React.Component {
 }
 
 class DetailsScreen extends React.Component {
-**static navigationOptions = {
+static navigationOptions = {
         title: 'About Me',
-      };**
+      };
   render() {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
@@ -322,5 +322,108 @@ class DetailsScreen extends React.Component {
   }
 }
 ```
+Few lines of code added without modifying any other code, just add them in your code and check out the output,
+It will display the title at the top nav bar.
 
 
+## 5. Adding Styles to the HomeScreen and added one more Text named Sagar Kalyan.
+
+```
+ <ImageBackground source={require('./app/img/bg_travel.jpeg')} style={{width: '100%', height: '100%'}}>
+      <Text style={styles.googleFont} >Sagar Kalyan</Text>
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+         <Text style={styles.textHome}>Hi, Welcome to Creators App!</Text>
+        <Button
+            title="About Me"
+            onPress={() => this.props.navigation.navigate('AboutMe')}
+            />
+      </View>
+       </ImageBackground>
+ ...      
+ ...
+ 
+ export default createAppContainer(AppNavigator);
+
+const styles = StyleSheet.create({
+
+     googleFont: {
+      fontFamily: "KaushanScript",
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'flex-start',
+      paddingTop: 10,
+      textAlign: 'center',
+      fontSize: 40,
+      color: '#ffffff',
+      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+      textShadowOffset: {width: -1, height: 1},
+      textShadowRadius: 5
+     },
+
+     textHome: {
+      fontSize: 20,
+      color: '#ffffff',
+      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+      textShadowOffset: {width: -1, height: 1},
+      textShadowRadius: 5,
+      backgroundColor: '#04676D',
+      padding: 5,
+      margin: 5
+
+     }
+
+ });
+       
+```
+
+
+## 6. Adding Google Font in React native (Home Screen)
+We just added one more text at the top named Sagar Kalyan. And given some Styles to it.
+
+ **fontFamily: "KaushanScript",**
+ I have added this code earlier, Its not working. 
+ Now, To make this line of code work, we have to download font from google font.
+ 
+**React Native Adding Google Font - Kaushan Script**
+
+After Selecting the font, There is download icon at the top right side. Just click on it to download.
+
+Rename it to **KaushanScript** it's a ttf format file.
+I have added downloaded file inside the app folder **(app/assets/fonts/KaushanScript.ttf)** in it,
+
+Now add the following lines of code (At end it looks like this..)
+**In package.json**
+```
+"jest": {
+    "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./app/assets/fonts/"
+    ]
+  }
+}
+```
+
+Then we tell react native to link those font files for us:
+Run, Using Command line:
+```
+react-native link
+```
+
+On Android Studio,
+if you look in the file path **"android/app/src/main/assets/fonts/"**
+you should see your fonts have been copied over:
+**KaushanScript.ttf**
+
+
+Now, We are done with the Google Fonts, Just type react native command to run the application.
+```
+react-native run-android
+```
+
+[Reference: Adding React Native Custom Fonts](https://medium.com/react-native-training/react-native-custom-fonts-ccc9aacf9e5e)
+ If you didn't understood then, just follow the instructions Step by Step.
+
+
+## 7. 
