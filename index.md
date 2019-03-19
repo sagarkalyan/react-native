@@ -529,6 +529,52 @@ Adding the style properties also at the end. (view, h1, text, p, linkstyle)
 react-native run-android
 ```
 
+## 8. Adding Webview (for embedding youtube videos):
+
+**Installing:** Here's how to get started quickly with the React Native WebView.
+Add react-native-webview to your dependencies
+Using Command line-
+```
+npm install react-native-webview
+```
+
+React Native modules that include native Objective-C, Swift, Java, or Kotlin code have to be "linked" so that the compiler knows to include them in the app.
+**Link native dependencies** Using Command line-
+```
+react-native link react-native-webview
+```
+
+**Add the Following Code in App.js:**
+```
+ import { WebView } from 'react-native-webview';
+ 
+ ...
+  class DetailsScreen extends React.Component {
+    static navigationOptions = {
+            title: 'About Me',
+          };
+      render() {
+        return (
+           <ScrollView contentContainerStyle={styles.view}>
+  ...        
+  <View style={{ height: 300 }}>
+  <WebView
+          style={{flex:1}}
+          javaScriptEnabled={true}
+          source={{uri: 'https://www.youtube.com/embed/FgyDAcxmUgU?rel=0&autoplay=0&showinfo=0&controls=0'}}
+          />
+  </View>
+  ...
+  <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+            <Text>About Me</Text>
+            <Button title="Back to Home" onPress={() => this.props.navigation.navigate('Home')} />
+      </View>
+    </ScrollView>
+   );
+   }
+}
+ 
+ ```
 
 
   
