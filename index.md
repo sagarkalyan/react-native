@@ -426,4 +426,105 @@ react-native run-android
  If you didn't understood then, just follow the instructions Step by Step.
 
 
-## 7. 
+## 7. About Me Page: We are going to add Scrollview, Image, Linking.
+We will be using ResponsiveImage component instead of Image Component,
+to make it better work on different devices.
+
+Installation Process **ResponsiveImage**
+Type the command in Command line - 
+```
+npm install react-native-responsive-image --save
+```
+
+[Reference: Adding React Native Responsive Image](https://www.npmjs.com/package/react-native-responsive-image)
+
+```
+import {Platform, StyleSheet, Text, View, Button, ImageBackground, ScrollView, Image, Linking } from 'react-native';
+import { createStackNavigator, createAppContainer } from "react-navigation";
+import ResponsiveImage from 'react-native-responsive-image';
+
+...
+class DetailsScreen extends React.Component {
+    static navigationOptions = {
+            title: 'About Me',
+          };
+      render() {
+        return (
+           <ScrollView contentContainerStyle={styles.view}>
+                      <View style={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
+                            <ResponsiveImage source={require('./app/img/Sagar_kalyan.jpg')} initWidth="400" initHeight="190"/>
+                      </View>
+                       <Text style={styles.h1}>About Me</Text>
+                       <Text style={[styles.text, styles.p]}>
+                        Hi, It's Me Sagar kalyan,
+                        I am struggler or hustler among millions of students in india,
+                        who is very passionate about sharing his creativity and knowledge to the world.
+                        Real life experiences counts the most, Although i failed in many decision making
+                        for my career but now it's all helping me in some or the other perspective of lives.
+                        Being true to myself had great impact in my life. So, i believe you also can do the same thing,
+                        whatever i am doing right now to achieve my goals,
+                        Just Implementing in your areas of interest and knowledge you have gained. Its Not enough but i have to stop...
+                        </Text>
+                       <Text style={[styles.text, styles.p,]} onPress={() =>
+                           Linking.openURL('https://www.youtube.com/channel/UCKjZjkbjRxiks2MbTdTSh2Q/')}
+                           style={styles.linkstyle}
+                         >Subscribe to My Youtube Channel</Text>
+                  <Text style={[styles.text, styles.p]} onPress={() =>
+                           Linking.openURL('https://www.facebook.com/sagarkalyan81/')}
+                           style={styles.linkstyle}
+                         >Follow Me on Facebook</Text>
+                   <Text style={[styles.text, styles.p]} onPress={() =>
+                                     Linking.openURL('https://www.instagram.com/sagarkalyan1/')}
+                                     style={styles.linkstyle}
+                                   >Follow Me on Instagram</Text>
+          <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+            <Text>About Me</Text>
+            <Button title="Back to Home" onPress={() => this.props.navigation.navigate('Home')} />
+          </View>
+           </ScrollView>
+        );
+      }
+    }
+    
+    ...
+    
+      const styles = StyleSheet.create({
+    ...
+    
+     view: {
+         marginTop: 0,
+         padding: 2
+       },
+        h1: {
+           fontSize: 22,
+           alignSelf: 'center',
+           marginBottom: 20
+         },
+         text: {
+             fontSize: 16,
+             lineHeight: 24,
+             marginBottom: 10,
+             margin: 10
+           },
+           p: {
+             textAlign: 'left',
+             marginBottom: 20
+           },
+           linkstyle: {
+             fontStyle: 'italic',
+             color: '#2962FF',
+             fontSize: 25,
+             lineHeight: 24,
+             padding: 10
+           }
+       });
+
+```
+**Using:**
+<ResponsiveImage> is expecting initWidth and initHeight props.
+  
+Adding the style properties also at the end. (view, h1, text, p, linkstyle)
+
+
+
+  
