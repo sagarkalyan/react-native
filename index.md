@@ -201,12 +201,63 @@ public class MainActivity extends ReactActivity {
 ```
 
 
+We are going to make two navigating screens and navigate them through Buttons.
 
 Then,add the folowing code in App.js
 **In App.js -**
 ```
 
+import React, {Component} from 'react';
+import {Platform, StyleSheet, Text, View, Button } from 'react-native';
+import { createStackNavigator, createAppContainer } from "react-navigation";
+
+
+class HomeScreen extends React.Component {
+  render() {
+    return (
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+         <Text>Hi, Welcome to Creators App!</Text>
+        <Button
+            title="About Me"
+            onPress={() => this.props.navigation.navigate('AboutMe')}
+            />
+      </View>
+    );
+  }
+}
+
+// This is second page. (About me)
+class DetailsScreen extends React.Component {
+  render() {
+    return (
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <Text>About Me</Text>
+        <Button title="Back to Home" onPress={() => this.props.navigation.navigate('Home')} />
+      </View>
+    );
+  }
+}
+
+const AppNavigator = createStackNavigator(
+  {
+    Home: HomeScreen,
+    AboutMe: DetailsScreen
+  },
+  {
+    initialRouteName: "Home"
+  }
+);
+export default createAppContainer(AppNavigator);
 ```
+
+If you run this code, you will see a screen with an empty navigation bar and a white content area containing your HomeScreen component.
+```
+react-native run-android
+```
+
+Now our stack has two routes, a Home route and a AboutMe route. The Home route corresponds to the HomeScreen component, and the AboutMe route corresponds to the DetailsScreen component.
+
+
 
 
 
