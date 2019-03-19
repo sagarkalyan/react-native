@@ -70,7 +70,7 @@ Now we are ready to go and develop our application.
 ### Creating a new application
 Using the React Native command line interface to start a new React Native project called **"AwesomeProject"**:
 ```
-react-native init AwesomeProject
+react-native init Sagarkalyan
 ```
 Preparing the Android device
 There are two methods to run an application on device.
@@ -83,7 +83,7 @@ To follow instructions on how to connect: Here is the link -> [Running your app 
 **Running your React Native application**
 **Note:** Run (react-native run-android) inside your project folder:
 ```
-cd AwesomeProject
+cd Sagarkalyan
 react-native run-android
 ```
 ![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/pic2.png)
@@ -92,6 +92,31 @@ If everything is set up and working correctly, you should see your new app runni
 
 ![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/pic3-1.jpg)
 
-To be continued...
 
+
+### Second Step: Start Coding for a new react native application.
+
+Removing Some specific code which is by default given when we run the application for the first time.
+
+```html
+const instructions = Platform.select({
+  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
+  android:
+    'Double tap R on your keyboard to reload,\n' +
+    'Shake or press menu button for dev menu',
+});
+
+type Props = {};
+export default class App extends Component<Props> {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <Text style={styles.instructions}>{instructions}</Text>
+      </View>
+    );
+  }
+}
+```
 
