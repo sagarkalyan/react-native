@@ -520,31 +520,39 @@ class DetailsScreen extends React.Component {
        });
 
 ```
+
 **Using:**
 <ResponsiveImage> is expecting initWidth and initHeight props.
-  
+
+
 Adding the style properties also at the end. (view, h1, text, p, linkstyle)
 **Now Run the application, to match the output display on the device.** 
+
 ```
 react-native run-android
 ```
 
+
 ## 8. Adding Webview (for embedding youtube videos):
+
 
 **Installing:** Here's how to get started quickly with the React Native WebView.
 Add react-native-webview to your dependencies
 Using Command line-
+
 ```
 npm install react-native-webview
 ```
 
 React Native modules that include native Objective-C, Swift, Java, or Kotlin code have to be "linked" so that the compiler knows to include them in the app.
 **Link native dependencies** Using Command line-
+
 ```
 react-native link react-native-webview
 ```
 
 **Add the Following Code in App.js:**
+
 ```
  import { WebView } from 'react-native-webview';
  
@@ -574,7 +582,7 @@ react-native link react-native-webview
    }
 }
  
- ```
+```
 
 [Reference: Adding React Native Webview](https://github.com/react-native-community/react-native-webview/blob/master/docs/Getting-Started.md)
 [Reference: Documentation React Native Webview](https://facebook.github.io/react-native/docs/webview)
@@ -583,7 +591,8 @@ react-native link react-native-webview
 ## 9. Adding Alert and TouchableOpacity for showing User interactive Review System (Alert Box) 
 
 **Complete Code: (In App.js)**
- ```
+
+```
          import React, {Component} from 'react';
         import {Platform, StyleSheet, Text, View, Button, ImageBackground, ScrollView, Image, Linking, Alert, TouchableOpacity } from 'react-native';
         import { createStackNavigator, createAppContainer } from "react-navigation";
@@ -751,7 +760,7 @@ react-native link react-native-webview
                                    }
     
          });
- ```
+```
 
 Therefore, Running the Application Successfully. We accomplished our task for this tutorial on React Native.
 Hopefully, It was easy understood.
