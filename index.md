@@ -257,6 +257,12 @@ react-native run-android
 
 Now our stack has two routes, a Home route and a AboutMe route. The Home route corresponds to the HomeScreen component, and the AboutMe route corresponds to the DetailsScreen component.
 
+**Some Basic Concept Understanding for Navigating to a new screen:**
+1. **this.props.navigation:** the navigation prop is passed in to every screen component (definition) in stack navigator (more about this later in "The navigation prop in depth").
+2. **navigate('Details'):** we call the navigate function (on the navigation prop — naming is hard!) with the name of the route that we'd like to move the user to.
+
+For Understanding More About This part In Details: [React Navigation (Navigating to a new screen)](https://reactnavigation.org/docs/en/getting-started.html)
+
 
 
 
