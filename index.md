@@ -545,11 +545,13 @@ npm install react-native-webview
 ```
 
 React Native modules that include native Objective-C, Swift, Java, or Kotlin code have to be "linked" so that the compiler knows to include them in the app.
+
 **Link native dependencies** Using Command line-
 
 ```
 react-native link react-native-webview
 ```
+
 
 **Add the Following Code in App.js:**
 
@@ -585,7 +587,10 @@ react-native link react-native-webview
 ```
 
 [Reference: Adding React Native Webview](https://github.com/react-native-community/react-native-webview/blob/master/docs/Getting-Started.md)
+
+
 [Reference: Documentation React Native Webview](https://facebook.github.io/react-native/docs/webview)
+
 
 
 ## 9. Adding Alert and TouchableOpacity for showing User interactive Review System (Alert Box) 
