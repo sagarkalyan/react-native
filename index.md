@@ -96,6 +96,9 @@ If everything is set up and working correctly, you should see your new app runni
 
 ### Second Step: Start Coding for a new react native application.
 
+
+# We will start Coding in App.js (root folder of Project [Sagarkalyan])
+## 1. Remove Code
 Removing Some specific code which is by default given when we run the application for the first time.
 
 ```html
@@ -118,5 +121,93 @@ export default class App extends Component<Props> {
     );
   }
 }
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+});
+  
 ```
+
+## 2. Navigating Between Screens
+
+The first step is to install in your project:
+
+Install the react-navigation package in your React Native project.
+**Use Command line -**
+```
+npm install --save react-navigation
+```
+
+Next, install react-native-gesture-handler.
+**Use Command line -**
+```
+npm install --save react-native-gesture-handler@~1.0.14
+```
+
+Link all native dependencies:
+**Use Command line -**
+```
+react-native link react-native-gesture-handler
+```
+
+Now, Final Step of installation of react-native-gesture-handler for Android,
+be sure to make the necessary modifications to **MainActivity.java:**
+**Android/app/src/main/java/com/sagarkalyan/MainActivity.java**
+
+```
+package com.sagarkalyan;
+
+import com.facebook.react.ReactActivity;
+
+import com.facebook.react.ReactActivityDelegate;
+import com.facebook.react.ReactRootView;
+import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+
+public class MainActivity extends ReactActivity {
+
+    /**
+     * Returns the name of the main component registered from JavaScript.
+     * This is used to schedule rendering of the component.
+     */
+    @Override
+    protected String getMainComponentName() {
+        return "Sagarkalyan";
+    }
+
+    @Override
+    protected ReactActivityDelegate createReactActivityDelegate() {
+        return new ReactActivityDelegate(this, getMainComponentName()) {
+        @Override
+        protected ReactRootView createRootView() {
+            return new RNGestureHandlerEnabledRootView(MainActivity.this);
+      }
+    };
+    }
+}
+```
+
+
+
+Then,add the folowing code in App.js
+**In App.js -**
+```
+
+```
+
+
+
 
