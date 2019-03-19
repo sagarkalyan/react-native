@@ -264,7 +264,63 @@ Now our stack has two routes, a Home route and a AboutMe route. The Home route c
 For Understanding More About This part In Details: [React Navigation (Navigating to a new screen)](https://reactnavigation.org/docs/en/getting-started.html)
 
 
+## 3. Adding Background Image on Home screen.
+```
+import {Platform, StyleSheet, Text, View, Button, ImageBackground } from 'react-native';
 
+class HomeScreen extends React.Component {
+  render() {
+    return (
+     <ImageBackground source={require('./app/img/bg_travel.jpeg')} style={{width: '100%', height: '100%'}}>
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+         <Text>Hi, Welcome to Creators App!</Text>
+        <Button
+            title="About Me"
+            onPress={() => this.props.navigation.navigate('AboutMe')}
+            />
+      </View>
+       </ImageBackground>
+    );
+  }
+}
+```
+Modify the given above code, and then run your application again to check if its working properly. It will Show up the image in the background on Homepage screen.
 
+## 4. Adding title on the top navigation bar,
+
+```
+class HomeScreen extends React.Component {
+**static navigationOptions = {
+        title: 'Sagar Kalyan',
+      };**
+  render() {
+    return (
+     <ImageBackground source={require('./app/img/bg_travel.jpeg')} style={{width: '100%', height: '100%'}}>
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+         <Text>Hi, Welcome to Creators App!</Text>
+        <Button
+            title="About Me"
+            onPress={() => this.props.navigation.navigate('AboutMe')}
+            />
+      </View>
+       </ImageBackground>
+    );
+  }
+}
+
+class DetailsScreen extends React.Component {
+**static navigationOptions = {
+        title: 'About Me',
+      };**
+  render() {
+    return (
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <Text>About Me</Text>
+        <Button title="Back to Home" onPress={() => this.props.navigation.navigate('Home')} />
+      </View>
+    );
+  }
+}
+```
 
 
