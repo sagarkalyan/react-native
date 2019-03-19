@@ -524,6 +524,10 @@ class DetailsScreen extends React.Component {
 <ResponsiveImage> is expecting initWidth and initHeight props.
   
 Adding the style properties also at the end. (view, h1, text, p, linkstyle)
+**Now Run the application, to match the output display on the device.** 
+```
+react-native run-android
+```
 
 
 
