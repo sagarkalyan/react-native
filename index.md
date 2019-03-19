@@ -522,15 +522,19 @@ class DetailsScreen extends React.Component {
 ```
 
 **Using:**
-<ResponsiveImage> is expecting initWidth and initHeight props.
+
+ResponsiveImage is expecting initWidth and initHeight props.
 
 
 Adding the style properties also at the end. (view, h1, text, p, linkstyle)
+
 **Now Run the application, to match the output display on the device.** 
+
 
 ```
 react-native run-android
 ```
+
 
 
 ## 8. Adding Webview (for embedding youtube videos):
