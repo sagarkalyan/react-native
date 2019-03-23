@@ -771,6 +771,190 @@ react-native link react-native-webview
          });
 ```
 
+
+### This is the final modified code with the change of Backgorund Image and Using Opacity to make it cool and great App:
+
+```
+
+    import React, {Component} from 'react';
+    import {Platform, StyleSheet, Text, View, Button, ScrollView, ImageBackground, Image, Linking, Alert, TouchableOpacity } from 'react-native';
+    import { createStackNavigator, createAppContainer } from "react-navigation";
+    import ResponsiveImage from 'react-native-responsive-image';
+    import { WebView } from 'react-native-webview';
+
+    class HomeScreen extends React.Component {
+    static navigationOptions = {
+        title: 'Sagar Kalyan',
+      };
+      render() {
+        return (
+        <ImageBackground source={require('./app/img/bg_travel.jpg')} style={{width: '100%', height: '100%'}}>
+                <Text style={styles.googleFont} >Sagar Kalyan</Text>
+
+                   <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+
+                          <Text style={styles.textHome}>Hi, Welcome to Creators App!</Text>
+
+                           <Button
+                                    title="About Me"
+                                    onPress={() => this.props.navigation.navigate('AboutMe')}
+                                  />
+                        </View>
+            </ImageBackground>
+        );
+      }
+    }
+
+    class DetailsScreen extends React.Component {
+    static navigationOptions = {
+        title: 'About Me',
+      };
+    button() {
+        Alert.alert(
+          'Sagar Kalyan : My First application on React Native',
+          'Did you Like my App?',
+          [
+            {text: 'Ask me later', onPress: () => console.warn('You Can Review Me Later.')},
+            {text: 'NO', onPress: () => console.warn('No Problem, I will Improve'), style: 'cancel'},
+            {text: 'YES', onPress: () => console.warn('Thanks ! You Liked it !') },
+          ]
+        );
+      }
+      render() {
+        return (
+            <ScrollView contentContainerStyle={styles.view}>
+            <View style={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
+                  <ResponsiveImage source={require('./app/img/Sagar_kalyan.jpg')} initWidth="400" initHeight="190"/>
+            </View>
+             <Text style={styles.h1}>About Me</Text>
+             <Text style={[styles.text, styles.p]}>
+              Hi, It's Me Sagar kalyan,
+              I am struggler or hustler among millions of students in india,
+              who is very passionate about sharing his creativity and knowledge to the world.
+              Real life experiences counts the most, Although i failed in many decision making
+              for my career but now it's all helping me in some or the other perspective of lives.
+              Being true to myself had great impact in my life. So, i believe you also can do the same thing,
+              whatever i am doing right now to achieve my goals,
+              Just Implementing in your areas of interest and knowledge you have gained. Its Not enough but i have to stop...
+              </Text>
+              <Text style={[styles.text, styles.p,]} onPress={() =>
+                       Linking.openURL('https://www.youtube.com/channel/UCKjZjkbjRxiks2MbTdTSh2Q/')}
+                       style={styles.linkstyle}
+                     >Subscribe to My Youtube Channel</Text>
+              <Text style={[styles.text, styles.p]} onPress={() =>
+                       Linking.openURL('https://www.facebook.com/sagarkalyan81/')}
+                       style={styles.linkstyle}
+                     >Follow Me on Facebook</Text>
+               <Text style={[styles.text, styles.p]} onPress={() =>
+                                 Linking.openURL('https://www.instagram.com/sagarkalyan1/')}
+                                 style={styles.linkstyle}
+                               >Follow Me on Instagram</Text>
+
+                  <View style={{ height: 300 }}>
+
+                          <WebView
+                                  style={{flex:1}}
+                                  javaScriptEnabled={true}
+                                  source={{uri: 'https://www.youtube.com/embed/FgyDAcxmUgU?rel=0&autoplay=0&showinfo=0&controls=0'}}
+                          />
+                         </View>
+
+                   <TouchableOpacity onPress={() => this.button()}>
+                            <Text style={[styles.alert]}>Review My App</Text>
+                          </TouchableOpacity>
+
+                  <View style={{ flex: 1, alignItems: "center", justifyContent: "flex-start" }}>
+                   <Text >Homepage</Text>
+                   <Button title="Back to Home" onPress={() => this.props.navigation.navigate('Home')} />
+                   </View>
+                </ScrollView>
+
+        );
+      }
+    }
+
+    const AppNavigator = createStackNavigator(
+      {
+        Home: HomeScreen,
+        AboutMe: DetailsScreen
+      },
+      {
+        initialRouteName: "Home"
+      }
+    );
+
+
+    export default createAppContainer(AppNavigator);
+
+
+    const styles = StyleSheet.create({
+
+     googleFont: {
+      fontFamily: "KaushanScript",
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'flex-start',
+      paddingTop: 10,
+      textAlign: 'center',
+      fontSize: 40,
+      color: '#ffffff',
+      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+      textShadowOffset: {width: -1, height: 1},
+      textShadowRadius: 5
+     },
+
+     textHome: {
+      fontSize: 20,
+      color: '#ffffff',
+      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+      textShadowOffset: {width: -1, height: 1},
+      textShadowRadius: 5,
+      backgroundColor: 'rgba(255,255,255,0.3)',
+      padding: 5,
+      margin: 5
+
+     },
+      view: {
+         marginTop: 0,
+         padding: 2
+       },
+        h1: {
+           fontSize: 22,
+           alignSelf: 'center',
+           marginBottom: 20
+         },
+         text: {
+             fontSize: 16,
+             lineHeight: 24,
+             marginBottom: 10,
+             margin: 10
+           },
+           p: {
+             textAlign: 'left',
+             marginBottom: 20
+           },
+           linkstyle: {
+             fontStyle: 'italic',
+             color: '#2962FF',
+             fontSize: 25,
+             lineHeight: 24,
+             padding: 10
+           },
+           alert:{
+             backgroundColor: '#FF0000',
+             color: '#FFF',
+             textShadowColor: 'rgba(0, 0, 0, 0.50)',
+             textShadowOffset: {width: -1, height: 1},
+             textShadowRadius: 2,
+             padding: 10,
+             margin: 20,
+             textAlign: 'center'
+           }
+    });
+```
+
+
+
 Therefore, Running the Application Successfully. We accomplished our task for this tutorial on React Native.
 Hopefully, It was easy understood.
 
