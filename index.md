@@ -295,7 +295,7 @@ static navigationOptions = {
       };
   render() {
     return (
-     <ImageBackground source={require('./app/img/bg_travel.jpeg')} style={{width: '100%', height: '100%'}}>
+     <ImageBackground source={require('./app/img/bg_travel.jpeg')} style=\{{width: '100%', height: '100%'}}>
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
          <Text>Hi, Welcome to Creators App!</Text>
         <Button
