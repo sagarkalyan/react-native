@@ -215,7 +215,7 @@ import { createStackNavigator, createAppContainer } from "react-navigation";
 class HomeScreen extends React.Component {
   render() {
     return (
-      <View style={&lbrace; flex: 1, alignItems: "center", justifyContent: "center" &rbrace;}>
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" &rbrace; }}>
          <Text>Hi, Welcome to Creators App!</Text>
         <Button
             title="About Me"
