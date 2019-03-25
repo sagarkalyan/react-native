@@ -792,7 +792,7 @@ react-native link react-native-webview
 
 ![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-7.jpg)
 
-### This is the final modified code with the change of Backgorund Image and Using Opacity to make it cool and great App:
+### This is the final modified code with the change of Background Image and Using Opacity to make it cool and great App:
 
 ```
 
@@ -976,7 +976,7 @@ react-native link react-native-webview
 ![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-8.jpg)
 
 
-### Added Mobile Icon as logo of an Application:
+### Adding Mobile Icon as logo of an Application:
 ![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/4th.png)
 Adding different pixels of icon images inside the (res) folder as location given in the above screenshot. 
 
@@ -988,5 +988,6 @@ Therefore, Running the Application Successfully. We accomplished our task for th
 Hopefully, It was easy understood.
 
 Thanks
+
 Sagar kalyan
 
