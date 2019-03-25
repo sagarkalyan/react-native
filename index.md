@@ -550,7 +550,7 @@ Adding the style properties also at the end. (view, h1, text, p, linkstyle)
 react-native run-android
 ```
 
-![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-5.jpg)
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-4.jpg)
 
 ## 8. Adding Webview (for embedding youtube videos):
 
@@ -605,7 +605,7 @@ react-native link react-native-webview
  
 ```
 
-![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-6.jpg)
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-5.jpg)
 
 [Reference: Adding React Native Webview](https://github.com/react-native-community/react-native-webview/blob/master/docs/Getting-Started.md)
 
