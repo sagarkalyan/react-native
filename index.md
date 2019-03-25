@@ -255,6 +255,8 @@ If you run this code, you will see a screen with an empty navigation bar and a w
 react-native run-android
 ```
 
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-1.jpg)
+
 Now our stack has two routes, a Home route and a AboutMe route. The Home route corresponds to the HomeScreen component, and the AboutMe route corresponds to the DetailsScreen component.
 
 **Some Basic Concept Understanding for Navigating to a new screen:**
