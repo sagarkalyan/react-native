@@ -383,7 +383,7 @@ const styles = StyleSheet.create({
  });
        
 ```
-![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-3.jpg)
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-2.jpg)
 
 ## 6. Adding Google Font in React native (Home Screen)
 We just added one more text at the top named Sagar Kalyan. And given some Styles to it.
