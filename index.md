@@ -434,7 +434,7 @@ Now, We are done with the Google Fonts, Just type react native command to run th
 react-native run-android
 ```
 
-![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-4.jpg)
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-3.jpg)
 
 [Reference: Adding React Native Custom Fonts](https://medium.com/react-native-training/react-native-custom-fonts-ccc9aacf9e5e)
  If you didn't understood then, just follow the instructions Step by Step.
@@ -450,7 +450,7 @@ Type the command in Command line -
 npm install react-native-responsive-image --save
 ```
 
-![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-5.jpg)
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-10.jpg)
 [Reference: Adding React Native Responsive Image](https://www.npmjs.com/package/react-native-responsive-image)
 
 ```
