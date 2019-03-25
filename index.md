@@ -88,6 +88,8 @@ react-native run-android
 ```
 ![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/pic2.png)
 
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/1st.png)
+
 If everything is set up and working correctly, you should see your new app running in your Android device.
 
 ![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/pic3-1.jpg)
@@ -163,6 +165,8 @@ Link all native dependencies:
 ```
 react-native link react-native-gesture-handler
 ```
+
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/2nd.png)
 
 Now, Final Step of installation of react-native-gesture-handler for Android,
 be sure to make the necessary modifications to **MainActivity.java:**
@@ -416,6 +420,8 @@ Run, Using Command line:
 ```
 react-native link
 ```
+
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/3rd.png)
 
 On Android Studio,
 if you look in the file path **"android/app/src/main/assets/fonts/"**
@@ -971,7 +977,10 @@ react-native link react-native-webview
 
 
 ### Added Mobile Icon as logo of an Application:
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/4th.png)
+Adding different pixels of icon images inside the (res) folder as location given in the above screenshot. 
 
+Output: Result
 ![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-9.jpg)
 
 
