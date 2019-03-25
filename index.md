@@ -286,7 +286,10 @@ class HomeScreen extends React.Component {
   }
 }
 ```
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-2.jpg)
+
 Modify the given above code, and then run your application again to check if its working properly. It will Show up the image in the background on Homepage screen.
+
 
 ## 4. Adding title on the top navigation bar,
 
@@ -324,6 +327,9 @@ static navigationOptions = {
   }
 }
 ```
+
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-3.jpg)
+
 Few lines of code added without modifying any other code, just add them in your code and check out the output,
 It will display the title at the top nav bar.
 
@@ -377,7 +383,7 @@ const styles = StyleSheet.create({
  });
        
 ```
-
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-3.jpg)
 
 ## 6. Adding Google Font in React native (Home Screen)
 We just added one more text at the top named Sagar Kalyan. And given some Styles to it.
@@ -424,6 +430,8 @@ Now, We are done with the Google Fonts, Just type react native command to run th
 react-native run-android
 ```
 
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-4.jpg)
+
 [Reference: Adding React Native Custom Fonts](https://medium.com/react-native-training/react-native-custom-fonts-ccc9aacf9e5e)
  If you didn't understood then, just follow the instructions Step by Step.
 
@@ -438,6 +446,7 @@ Type the command in Command line -
 npm install react-native-responsive-image --save
 ```
 
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-5.jpg)
 [Reference: Adding React Native Responsive Image](https://www.npmjs.com/package/react-native-responsive-image)
 
 ```
@@ -537,7 +546,7 @@ Adding the style properties also at the end. (view, h1, text, p, linkstyle)
 react-native run-android
 ```
 
-
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-5.jpg)
 
 ## 8. Adding Webview (for embedding youtube videos):
 
@@ -591,6 +600,8 @@ react-native link react-native-webview
 }
  
 ```
+
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-6.jpg)
 
 [Reference: Adding React Native Webview](https://github.com/react-native-community/react-native-webview/blob/master/docs/Getting-Started.md)
 
@@ -773,6 +784,9 @@ react-native link react-native-webview
          });
 ```
 
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-6.jpg)
+
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-7.jpg)
 
 ### This is the final modified code with the change of Backgorund Image and Using Opacity to make it cool and great App:
 
@@ -955,6 +969,12 @@ react-native link react-native-webview
     });
 ```
 
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-8.jpg)
+
+
+### Added Mobile Icon as logo of an Application:
+
+![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-9.jpg)
 
 
 Therefore, Running the Application Successfully. We accomplished our task for this tutorial on React Native.
