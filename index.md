@@ -328,8 +328,6 @@ static navigationOptions = {
 }
 ```
 
-![Image](https://raw.githubusercontent.com/sagarkalyan/react-native/master/images/Untitled-2.jpg)
-
 Few lines of code added without modifying any other code, just add them in your code and check out the output,
 It will display the title at the top nav bar.
 
