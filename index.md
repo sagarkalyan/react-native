@@ -995,9 +995,10 @@ Hopefully, It was easy understood.
 4. [BackGround Image](https://facebook.github.io/react-native/docs/imagebackground)
 5. [Adding React Native Custom Fonts](https://medium.com/react-native-training/react-native-custom-fonts-ccc9aacf9e5e)
 6. [Adding React Native Responsive Image (About Me Page)](https://www.npmjs.com/package/react-native-responsive-image)
-7.1. [Reference: Adding React Native Webview (For Youtube)](https://github.com/react-native-community/react-native-webview/blob/master/docs/Getting-Started.md)
 
-7.2. [Reference: Documentation React Native Webview](https://facebook.github.io/react-native/docs/webview)
+7. (a.) [Reference: Adding React Native Webview (For Youtube)](https://github.com/react-native-community/react-native-webview/blob/master/docs/Getting-Started.md)
+
+7. (b) [Reference: Documentation React Native Webview](https://facebook.github.io/react-native/docs/webview)
 
 Check Out This Free Source Code on github for more help if you want to learn more features: 
 
